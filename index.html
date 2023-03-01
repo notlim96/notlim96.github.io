@@ -15,6 +15,12 @@
     <link href="css/main.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/whatsapp.css">
+
+    <script src="email/email.js"></script>
+
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <script src="js/sweetalert2.min.js"></script>
     <!-- Document Title -->
     <title>Portafolio | Ing. Milton Huaracc Palomino</title>
 </head>
@@ -182,7 +188,7 @@ Trabajos creativos.</h2>
                   <!-- Replace Patch to Image Under -->
                   <img src="images/1.1.PNG" class="photobox__preview" alt="Preview">
                   <!-- Replace Image Title Under -->
-                  <span class="photobox__label">Awesome Work</span>
+                  <span class="photobox__label">Cargar archivos a partir de un Excel</span>
                 </div>
               </div>
           </div>
@@ -192,7 +198,7 @@ Trabajos creativos.</h2>
                   <!-- Replace Patch to Image Under -->
                   <img src="images/2.2.PNG" class="photobox__preview" alt="Preview">
                   <!-- Replace Image Title Under -->
-                  <span class="photobox__label">Awesome Work</span>
+                  <span class="photobox__label">Sistema de Transportes</span>
                 </div>
               </div>
           </div>
@@ -202,7 +208,7 @@ Trabajos creativos.</h2>
                   <!-- Replace Patch to Image Under -->
                   <img src="images/3.3.PNG" class="photobox__preview" alt="Preview">
                   <!-- Replace Image Title Under -->
-                  <span class="photobox__label">Awesome Work</span>
+                  <span class="photobox__label">Login del sstema de Help Desk</span>
                 </div>
               </div>
           </div>
@@ -214,7 +220,7 @@ Trabajos creativos.</h2>
                   <!-- Replace Patch to Image Under -->
                   <img src="images/4.4.PNG" class="photobox__preview" alt="Preview">
                   <!-- Replace Image Title Under -->
-                  <span class="photobox__label">Awesome Work</span>
+                  <span class="photobox__label">Sistemas adaptable para Movile</span>
                 </div>
               </div>
           </div>
@@ -222,9 +228,9 @@ Trabajos creativos.</h2>
             <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
                   <!-- Replace Patch to Image Under -->
-                  <img src="images/5.5.png" class="photobox__preview" alt="Preview">
+                  <img src="images/5.5.PNG" class="photobox__preview" alt="Preview">
                   <!-- Replace Image Title Under -->
-                  <span class="photobox__label">Awesome Work</span>
+                  <span class="photobox__label">Sistema de Compras y Ventas</span>
                 </div>
               </div>
           </div>
@@ -232,9 +238,9 @@ Trabajos creativos.</h2>
             <div class="photobox photobox_type10">
                 <div class="photobox__previewbox">
                   <!-- Replace Patch to Image Under -->
-                  <img src="images/6.png" class="photobox__preview" alt="Preview">
+                  <img src="images/6.6.PNG" class="photobox__preview" alt="Preview">
                   <!-- Replace Image Title Under -->
-                  <span class="photobox__label">Awesome Work</span>
+                  <span class="photobox__label">Sistema de Hel Desk</span>
                 </div>
               </div>
           </div>
@@ -246,9 +252,9 @@ Trabajos creativos.</h2>
               <div class="photobox photobox_type10">
                   <div class="photobox__previewbox">
                     <!-- Replace Patch to Image Under -->
-                    <img src="images/5.png" class="photobox__preview" alt="Preview">
+                    <img src="images/7.7.PNG" class="photobox__preview" alt="Preview">
                     <!-- Replace Image Title Under -->
-                    <span class="photobox__label">Awesome Work</span>
+                    <span class="photobox__label">Haciendo un tramite en el sistema Help Desk</span>
                   </div>
                 </div>
             </div>
@@ -256,9 +262,9 @@ Trabajos creativos.</h2>
               <div class="photobox photobox_type10">
                   <div class="photobox__previewbox">
                     <!-- Replace Patch to Image Under -->
-                    <img src="images/3.png" class="photobox__preview" alt="Preview">
+                    <img src="images/8.8.PNG" class="photobox__preview" alt="Preview">
                     <!-- Replace Image Title Under -->
-                    <span class="photobox__label">Awesome Work</span>
+                    <span class="photobox__label">Detalles del Tramite en Help Desk</span>
                   </div>
                 </div>
             </div>
@@ -266,9 +272,9 @@ Trabajos creativos.</h2>
               <div class="photobox photobox_type10">
                   <div class="photobox__previewbox">
                     <!-- Replace Patch to Image Under -->
-                    <img src="images/1.png" class="photobox__preview" alt="Preview">
+                    <img src="images/9.9.PNG" class="photobox__preview" alt="Preview">
                     <!-- Replace Image Title Under -->
-                    <span class="photobox__label">Awesome Work</span>
+                    <span class="photobox__label">Interracturar con el Sistema de Help Desk</span>
                   </div>
                 </div>
             </div>
@@ -369,20 +375,20 @@ Trabajos creativos.</h2>
       </div>
       <div class="row">
         <div class="col-12 col-lg-6 email">
-          <input placeholder="tu correo electronico ..." type="email" id="email" pattern=".+@globex.com" size="30" required>
+          <input placeholder="tu correo electronico ..." type="email" id="email_milton_reg" name="email_milton_reg" pattern=".+@globex.com" size="30" required>
         </div>
         <div class="col-12 col-lg-6 email">
-          <input placeholder="tema ..." type="subject" id="subject" size="30" required>
+          <input placeholder="tema ..." type="subject" id="tema_milton_reg" name="tema_milton_reg" size="30" required>
         </div>
       </div>
       <div class="row">
         <div class="col-12 message">
-          <textarea placeholder="mensaje ..." id="mensaje" name="message" rows="5" cols="1"></textarea>
+          <textarea placeholder="mensaje ..." id="mensaje_milton_reg" name="mensaje_milton_reg" rows="5" cols="1"></textarea>
         </div>
         <div class="col-12">
           <div class="hero-btns contact-btn">
             <!-- Send Message Btn -->
-            <a href="#">Enviar</a>
+            <a href="#" onclick="enviar_correo_milton();">Enviar</a>
           </div>
         </div>
       </div>
@@ -422,3 +428,4 @@ Trabajos creativos.</h2>
   <!-- Scripts Ends -->
 </body>
 </html>
+
